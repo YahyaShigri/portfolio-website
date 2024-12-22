@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="logo.ico" type="image/x-icon" />
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="image.png" alt="Richard hanrick" width="100" height="120" />
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Yahya Khan</h1>
+
+          <p class="title">Ai Researcher @DataWars.io</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:s9shigri@gmail.com" class="contact-link">s9shigri@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+923488880220" class="contact-link">03488880220</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1999-03-01">Mar 1, 1999</time>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Skardu, Gilgit Baltistan</address>
+            </div>
+          </li>
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="www.linkedin.com/in/yahya-khan-shigri/" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #b0b0b0;
+                  }
+                </style>
+                <path
+                  d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://github.com/zabih-khan/" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512">
+                <!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z" />
+              </svg>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.kaggle.com/zabihullah18" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="1.25em" viewBox="0 0 448 512"
+                style="background-color: #B0B0B0; border-radius:2px; padding:2px;  ">
+
+                <path
+                  d="M304.2 501.5L158.4 320.3 298.2 185c2.6-2.7 1.7-10.5-5.3-10.5h-69.2c-3.5 0-7 1.8-10.5 5.3L80.9 313.5V7.5q0-7.5-7.5-7.5H21.5Q14 0 14 7.5v497q0 7.5 7.5 7.5h51.9q7.5 0 7.5-7.5v-109l30.8-29.3 110.5 140.6c3 3.5 6.5 5.3 10.5 5.3h66.9q5.25 0 6-3z"
+                  fill="black"></path>
+              </svg>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <!-- <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li> -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Hello! I'm Zabih Ullah, and I’m an AI engineer. I love artificial intelligence (AI) and cool new technology. I’ve worked with machine learning and deep learning to build smart ideas that make life easier.
+
+            I use tools like scikit-learn and TensorFlow, and I know how to work with Transformers and Hugging Face to make AI products. I’m skilled with PyTorch and Keras, which I use to make deep learning models that can recognize images or understand speech.
+
+            One of my favorite things is generative AI. This is a type of AI that can create things like text, pictures, or even music! I work with lage language models (LLMs), both free and paid, to build creative applications.
+          </p>
+
+          <p>
+          <ul>
+            <li><strong>Python:</strong> Proficient in Python for data analysis and manipulation.</li>
+            <li><strong>NumPy and Pandas:</strong> Expert in using NumPy and Pandas for efficient data processing and
+              analysis.</li>
+            <li><strong>Data Visualization:</strong> Skilled in creating insightful visualizations to communicate data
+              stories.</li>
+            <li><strong>SQL:</strong> Adept at querying and manipulating data in relational databases.</li>
+            <li><strong>Data Science:</strong> Possess a strong understanding of data science concepts and
+              methodologies.</li>
+            <li><strong>Langchain, NLP, OpenAI Models:</strong> Eager to learn and explore additional tools and
+              technologies for data analysis and manipulation.</li>
+          </ul>
+
+          </p>
+          <a href="Zabih_Resume.pdf" download class="cv-download-button">Download CV</a>
+
+        </section><br>
+        <style>
+          .cv-download-button {
+            display: inline-block;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-decoration: none;
+            color: hsl(0, 33%, 99%);
+            margin-top: 20px;
+          }
+
+          .cv-download-button:hover {
+            background-color: #eee;
+          }
+        </style>
+
+        <!--
+          - service
+        -->
+        <section class="skill">
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data analyst</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Machine Learning</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Data Visualizations</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">NLP</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="90">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Langchain</h5>
+                <data value="80">80%</data>
+              </div>
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Generative AI</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%"></div>
+              </div>
+            </li>
+            <li class="skills-item">
+              <div class="title-wrapper">
+                <h5 class="h5">Power Bi</h5>
+                <data value="55">55%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%"></div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+
+
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="avatar-1.png" alt="Daniel lewis" width="80" data-modal-img />
+              </figure>
+
+              <img src="icon-quote.svg" alt="quote icon" />
+            </div>
+
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were
+                  very pleased with the work done. She has a lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum
+                  dolor sit amet, ullamcous cididt consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels
+                  dolore magnarels alia.
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!--
+          - certification
+        -->
+
+        <section class="clients">
+          <!-- <h3 class="h3 clients-title">Certificates</h3> -->
+          <h2 class="h2 article-title">Certificates</h2>
+
+          <ul class="clients-list has-scrollbar">
+            <li class="clients-item">
+              <a href="#">
+                <img src="c1.jpg" alt="ml" />
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="c2.jpg" alt="ml" />
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="c3.jpg" alt="ml" />
+              </a>
+            </li>
+            <li class="clients-item">
+              <a href="#">
+                <img src="c1.jpg" alt="ml" />
+              </a>
+            </li>
+
+
+
+          </ul>
+        </section><br>
+
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+
+        <section class="projects">
+          <!-- <h3 class="h3 clients-title">Projects</h3> -->
+          <h2 class="h2 article-title">Projects</h2><br>
+
+          <ul class="filter-list">
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Machine Learning</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Data Analysis</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Power Bi</button>
+            </li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>
+                Select category
+              </div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Machine Learning</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Data Analysis</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Power Bi</button>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://github.com/Zabih-khan/RAG-Chatbot-using-ChatGroq" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="p.png" alt="finance" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Custom Chatbot llama 3</h3>
+
+                <p class="project-category">Generative Ai</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Data Analysis">
+              <a href="https://github.com/Zabih-khan/Youtube-Sentiment-Analysis" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="p1.png" alt="orizon" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Youtube Comment Sentiment</h3>
+
+                <p class="project-category">Natural Language Processing</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Machine Learning">
+              <a href="https://github.com/Zabih-khan/Email-classifier-NLP" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="p3.png" alt="fundo" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Email Classifier</h3>
+
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Power Bi">
+              <a href="https://github.com/Zabih-khan/Chat-With-Multiple-PDF-Using-Google-Gemini-Pro" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="p4.png" alt="task manager" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Chat with PDF Gemini pro</h3>
+
+                <p class="project-category">Generative Ai</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Power Bi">
+              <a href="https://github.com/Zabih-khan/Resume-Screening-using-NLP" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="p5.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Resume Screening</h3>
+
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Power Bi">
+              <a href="https://github.com/Zabih-khan/mlproject" target="_blank">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="p6.png" alt="arrival" loading="lazy" />
+                </figure>
+
+                <h3 class="project-title">Student Performance Indicator</h3>
+
+                <p class="project-category">Machine Learning</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+      </article>
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Tariq Bin Ziyad Model School</h4>
+
+              <span>2014 - 2017</span>
+
+              <p class="timeline-text">
+                During my time at Tariq Bin Ziyad Model School from 2014 to 2016, I
+                cultivated a strong foundation in critical thinking and
+                creativity, setting the stage for my educational journey.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Peshawar model Degree Collage
+              </h4>
+
+              <span>2017 — 2018</span>
+
+              <p class="timeline-text">
+                My intermediate education at Peshawar model Degree Collage
+                (2018) not only solidified my academic prowess but also honed
+                my interpersonal skills through diverse interactions with
+                peers.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Abasyn University Peshawar
+              </h4>
+
+              <span>2020 — Present</span>
+
+              <p class="timeline-text">
+                Pursuing a Bachelor of Science in Software Engineering at
+                Abasyn University Peshawar, I've embraced the challenges of
+                higher education and expanded my horizons within the dynamic
+                world of technology.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Machine learning intern @Ineuron Remotely
+              </h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                - Developing AI Applications.
+              </p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Notebook Master @Kaggle
+              </h4>
+
+              <span>2023 — 2024</span>
+
+              <p class="timeline-text">
+                - Continuously contribute to Kaggle notebook projects and competitions.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Certified Artificial Intelligence (Xeven solutions)
+              </h4>
+
+              <span>2022 - 2023</span>
+
+              <p class="timeline-text">
+                - Proficient in applying machine learning techniques to
+                real-world problems.
+              </p>
+            </li>
+
+
+
+          </ol>
+        </section>
+
+        <section class="service">
+          <!-- <h3 class="h3 service-title">Skills</h3> -->
+          <h2 class="h2 article-title">Skills</h2>
+
+          <ul class="service-list">
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="icon-design.svg
+                " alt="design icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Machine Learning</h4>
+
+                <p class="service-item-text">
+                  A masterpiece of design intricately woven with the essence
+                  of machine learning's transformative capabilities.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="icon-dev.svg" alt="Web development icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Analysis</h4>
+
+                <p class="service-item-text">
+                  A manifestation of professional prowess, this design
+                  resonates with the essence of a seasoned data analyst's
+                  expertise.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="icon-app.svg" alt="mobile app icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Generative AI and LLMs</h4>
+
+                <p class="service-item-text">
+                  Utilizing Generative AI and LLMs to create Ai solutions and understand human language, showcasing
+                  cutting-edge AI capabilities.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="icon-photo.svg" alt="camera icon" width="40" />
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Visualizations</h4>
+
+                <p class="service-item-text">
+                  I make professional at Data Visualizations of any category
+                  at a professional level.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </article>
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105873.26973112219!2d71.46026556756676!3d33.97866922460434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d922c2a2aee563%3A0x859711ba0d23e20!2sSurizai%20Payan%2C%20Peshawar%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1717578251673!5m2!1sen!2sus"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+          </figure>
+        </section>
+
+        <section class="contact-form">
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required
+                data-form-input />
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+          </form>
+        </section>
+      </article>
+    </div>
+  </main>
+
+  <!--
+    - custom js link
+  -->
+  <script src="script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
