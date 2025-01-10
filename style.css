@@ -14,6 +14,31 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
+/* apply efect on profile picture */
+
+/* Style for the avatar container */
+.avatar-box {
+  display: inline-block;
+  overflow: hidden;
+  border-radius: 50%; /* Optional: Makes the image circular */
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style for the image inside the avatar box */
+.avatar-box img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect: Combined effects */
+.avatar-box:hover img {
+  transform: scale(0.9) rotate(10deg); /* Shrinks and rotates */
+  filter: grayscale(50%) blur(1px);   /* Adds grayscale and blur */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5); /* Adds shadow */
+}
+
 
 :root {
 

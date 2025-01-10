@@ -1,6 +1,10 @@
 'use strict';
 
-
+/* apply efect on profile picture */
+document.querySelector(".avatar-box").addEventListener("click", function () {
+  const img = this.querySelector("img");
+  img.style.transform = img.style.transform === "scale(0.9)" ? "scale(1)" : "scale(0.9)";
+});
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
